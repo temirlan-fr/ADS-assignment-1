@@ -27,6 +27,19 @@ public class Main {
         int result2 = SumOfFirstNelement(arr, n);
         System.out.println("Sum of first n elements = " + result2);
 
+
+
+//      TASK 3
+        Scanner num3 = new Scanner(System.in);
+
+        System.out.println("Number: ");
+        int b = num3.nextInt();
+
+        System.out.println("Power: ");
+        int n2 = num3.nextInt();
+
+        int result3 = (int) SumOfNpower(b, n2);
+        System.out.println("Sum of n power of b: " + result3);
     }
 
 //  TASK 1
@@ -44,5 +57,14 @@ public class Main {
             return 0;
         }
         return SumOfFirstNelement(arr, n-1) + arr[n-1];
+    }
+
+
+    //  TASK 3
+    public static double SumOfNpower(int b, int n){
+        if (n < 0) {
+            return 0;
+        }
+        return SumOfNpower(b, n-1) + Math.pow(b, n);
     }
 }
