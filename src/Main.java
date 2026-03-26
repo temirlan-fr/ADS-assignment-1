@@ -51,7 +51,7 @@ public class Main {
     }
 
 
-    //  TASK 2
+//  TASK 2
     public static int SumOfFirstNelement (int[] arr, int n) {
         if (n <= 0){
             return 0;
@@ -60,7 +60,7 @@ public class Main {
     }
 
 
-    //  TASK 3
+//  TASK 3
     public static double SumOfNpower(int b, int n){
         if (n < 0) {
             return 0;
