@@ -89,3 +89,24 @@ public class Main {
         System.out.print(num + " ");
 }
 }
+
+// TASK 1: SumOfSquares
+// Time Complexity: O(n)
+// Explanation: The function calls itself n times recursively, decrementing n by 1 each time.
+// Each call performs a constant amount of work (multiplication and addition).
+
+// TASK 2: SumOfFirstNelement
+// Time Complexity: O(n)
+// Explanation: n is the number of elements to sum. The recursion depth is directly
+// proportional to n, as it processes one element per recursive call.
+
+// TASK 3: SumOfNpower
+// Time Complexity: O(n)
+// Explanation: The function makes n recursive calls to calculate the sum from 0 to n.
+// Each call includes Math.pow(), making it linear relative to n.
+
+// TASK 4: reverse
+// Time Complexity: O(n)
+// Explanation: The function calls itself n times to read n numbers.
+// The space complexity is also O(n) due to the recursion stack holding the numbers before printing.
+
