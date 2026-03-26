@@ -40,7 +40,18 @@ public class Main {
 
         int result3 = (int) SumOfNpower(b, n2);
         System.out.println("Sum of n power of b: " + result3);
+
+
+
+//      TASK 4
+        Scanner num4 = new Scanner(System.in);
+
+        int m = num4.nextInt();
+
+        reverse(num4, m);
     }
+
+
 
 //  TASK 1
     public static int SumOfSquares(int n){
@@ -67,4 +78,14 @@ public class Main {
         }
         return SumOfNpower(b, n-1) + Math.pow(b, n);
     }
+
+
+//  TASK 4
+    public static void reverse(Scanner num4, int n) {
+        if (n <= 0) return;
+
+        int num = num4.nextInt();
+        reverse(num4, n - 1);
+        System.out.print(num + " ");
+}
 }
